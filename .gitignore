@@ -5,5 +5,8 @@ jspm_packages/
 # Optional eslint cache
 .eslintcache
 
+#build
+dist
+
 # other
 package-lock.json

@@ -1,9 +1,11 @@
 import './home.scss';
 
-function home(data) {
+import { header } from '../../components';
+
+function home() {
     return `
-        <div class="home">My home #${data.number}</div>
+        ${header()}
     `;
 }
 
-export default document.body.innerHTML = home({ number: 21 });
+export default document.body.innerHTML = home();

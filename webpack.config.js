@@ -34,17 +34,6 @@ const config = {
                 use: [
                     'file-loader'
                 ]
-            },
-            {
-                test: /\.png$/,
-                exclude: /node_modules/,
-                use: [
-                {
-                    loader: 'url-loader',
-                    options: {
-                        mimetype: 'image/png'
-                    }
-                }]
             }
         ]
     },

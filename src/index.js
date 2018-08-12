@@ -1,2 +1,2 @@
-console.log('my home is ready')
+import './styles/styles.scss';
 import './pages';
