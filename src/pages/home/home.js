@@ -1,11 +1,7 @@
 import './home.scss';
 
-import { header } from '../../components';
-
-function home() {
+export function home() {
     return `
-        ${header()}
+        <div class="home">Home</div>
     `;
 }
-
-export default document.body.innerHTML = home();
