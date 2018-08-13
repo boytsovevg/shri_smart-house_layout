@@ -1,5 +1,5 @@
-export const getListItems = (list = [], componentFn) => 
+export const getListItems = (list = [], componentFn, listClass = "") => 
     list
-        .map(item => `<li class="stats__device">${componentFn(item)}</li>`)
+        .map(item => `<li class="${listClass}">${componentFn(item)}</li>`)
         .join(',')
         .replace(/,/g, '');

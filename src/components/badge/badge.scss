@@ -1,0 +1,14 @@
+.badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 30px;
+    background-color: #f7f7f7;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.badge:active {
+    background-color: #FFD93E;
+}

@@ -1,10 +1,10 @@
 import './home.scss';
 
-import { primaryInfo, scenarios } from './components';
+import { favoriteDevices, primaryInfo, scenarios } from './components';
 
 export function home() {
     return `
-        <div class="page">
+        <div class="item">
             <section class="half-size">
                 ${primaryInfo()}
             </section>
@@ -12,5 +12,8 @@ export function home() {
                 ${scenarios()}
             </section>
         </div>
+        <section class="item">
+            ${favoriteDevices()}
+        </section>
     `;
 }
