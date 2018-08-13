@@ -1,0 +1,21 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 61px;
+    padding: 0 40px;
+
+    &__nav {
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+
+    &__nav-item {
+        margin-right: 16px;
+    }
+
+    &__item:last-child {
+        margin-right: 0;
+    }
+}

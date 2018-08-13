@@ -3,6 +3,10 @@
     src: local('ArialMT'), url('../assets/fonts/ArialMT-Bold.woff') format('woff'); 
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
     margin: 0;
     padding: 0;

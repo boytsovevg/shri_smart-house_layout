@@ -1,18 +1,16 @@
 import './app.scss';
 
-import { header } from './components';
+import { header, footer } from './components';
 import { home } from './pages';
 
-function app() {
+export function app() {
     return `
-        <div class="app">
+        <div class="page">
             ${header()}
             <main class="main">
                 ${home()}
             </main>
-            <footer class="footer">Footer</footer>
+            ${footer()}
         </div>
     `;
 }
-
-export default document.body.innerHTML = app();
