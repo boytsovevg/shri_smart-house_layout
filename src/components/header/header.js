@@ -2,6 +2,7 @@ import './header.scss';
 import logo from './assets/logo.svg';
 
 export function header() {
+
     return `
         <header class="header">
             <div class="header__logo">

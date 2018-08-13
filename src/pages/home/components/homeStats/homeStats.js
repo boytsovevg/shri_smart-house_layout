@@ -4,18 +4,30 @@ import { deviceList } from '../../../../components';
 
 import { weatherInfo } from '../wetherInfo/weatherInfo';
 
+import temperature from '../../assets/icon_temperature.svg';
+import sun from '../../assets/icon_sun.svg';
+
 export function homeStats() {
 
     const devices = [
         {
+            icon: {
+                path: temperature
+            },
             description: 'Philips Cooler',
             status: 'Начнет охлажлать в 16:30'
         },
         {
+            icon: {
+                path: sun
+            },
             description: 'Xiaomi Yeelight LED Smart Bulb',
             status: 'Включится в 17:00'
         },
         {
+            icon: {
+                path: temperature
+            },
             description: 'Philips Cooler',
             status: 'начнет охлажлать в 16:30'
         }
