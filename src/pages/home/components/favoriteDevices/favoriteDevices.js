@@ -12,9 +12,11 @@ export function favoriteDevices() {
         'Камеры'
     ];
 
+    const favoriteDevices = []
+
     return `
         <div class="favorite">
-            <div class="">
+            <div class="favorite__categories">
                 <h1>Избранные устройства</h1>
                 ${categories(categoriyLabels)}
             </div>

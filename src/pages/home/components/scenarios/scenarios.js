@@ -1,7 +1,6 @@
-import './scenarios.scss';
+import styles from './scenarios.scss';
 
-import { deviceCard } from '../../../../components';
-import { getListItems } from '../../../../services/list.service';
+import { deviceList } from '../../../../components';
 
 export function scenarios() {
     const devices = [
@@ -23,14 +22,12 @@ export function scenarios() {
         }
     ];
 
-    const devicesList = getListItems(devices, deviceCard);
+    const deviceNodes = deviceList(devices, { devices: 'scenarios__devices', device: 'scenarios__device'})
 
     return `
         <div class="scenarios">
             <h1>Избранные сценарии</h1>
-            <div class="scenarios__devices">
-                ${devicesList}
-            </div>
+            ${deviceNodes}
         </div>
     `;
 }
