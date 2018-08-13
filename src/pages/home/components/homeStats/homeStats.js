@@ -1,6 +1,7 @@
 import './homeStats.scss';
 
 import { deviceCard } from '../../../../components';
+import { getListItems } from '../../../../services/list.service';
 
 import { weatherInfo } from '../wetherInfo/weatherInfo';
 
@@ -21,10 +22,7 @@ export function homeStats() {
         }
     ];
 
-    const devicesList = devices
-        .map(device => `<li class="stats__device">${deviceCard(device)}</li>`)
-        .join(',')
-        .replace(/,/g, '');
+    const devicesList = getListItems(devices, deviceCard);
 
     return `
         <div class="stats">

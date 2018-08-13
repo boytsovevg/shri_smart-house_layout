@@ -1,6 +1,7 @@
 import './scenarios.scss';
 
 import { deviceCard } from '../../../../components';
+import { getListItems } from '../../../../services/list.service';
 
 export function scenarios() {
     const devices = [
@@ -22,10 +23,7 @@ export function scenarios() {
         }
     ];
 
-    const devicesList = devices
-        .map(device => `<li class="scenarios__device">${deviceCard(device)}</li>`)
-        .join(',')
-        .replace(/,/g, '');
+    const devicesList = getListItems(devices, deviceCard);
 
     return `
         <div class="scenarios">
