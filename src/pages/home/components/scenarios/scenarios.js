@@ -22,7 +22,7 @@ export function scenarios() {
         }
     ];
 
-    const deviceNodes = deviceList(devices, { devices: 'scenarios__devices', device: 'scenarios__device'})
+    const deviceNodes = deviceList(devices, { devices: 'scenarios__devices', device: 'scenarios__device'});
 
     return `
         <div class="scenarios">

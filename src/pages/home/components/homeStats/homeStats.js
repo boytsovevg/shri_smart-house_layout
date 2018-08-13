@@ -1,7 +1,6 @@
 import './homeStats.scss';
 
-import { deviceCard } from '../../../../components';
-import { getListItems } from '../../../../services/list.service';
+import { deviceList } from '../../../../components';
 
 import { weatherInfo } from '../wetherInfo/weatherInfo';
 
@@ -22,8 +21,6 @@ export function homeStats() {
         }
     ];
 
-    const devicesList = getListItems(devices, deviceCard);
-
     return `
         <div class="stats">
             <div>
@@ -33,8 +30,7 @@ export function homeStats() {
                     ${weatherInfo()}
                 </div>
             </div>
-            <ul class="stats__devices">
-               ${devicesList}
+            ${deviceList(devices, {devices: 'stats__devices', device: 'stats__device'})}
             </ul>
         </div>
     `;
