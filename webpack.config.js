@@ -29,10 +29,17 @@ const config = {
                 ]
             },
             {
-                test: /\.svg$/,
+                test: /\.(svg)$/,
                 exclude: /node_modules/,
                 use: [
-                    'file-loader'
+                    'file-loader?name=src/assets/icons/[name].[ext]'
+                ]
+            },
+            {
+                test: /\.(png)$/,
+                exclude: /node_modules/,
+                use: [
+                    'file-loader?name=src/assets/pictures/[name].[ext]'
                 ]
             },
             {

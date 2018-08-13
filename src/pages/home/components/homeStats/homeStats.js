@@ -4,8 +4,8 @@ import { deviceList } from '../../../../components';
 
 import { weatherInfo } from '../wetherInfo/weatherInfo';
 
-import temperature from '../../assets/icon_temperature.svg';
-import sun from '../../assets/icon_sun.svg';
+import temperature from '../../../../assets/icons/icon_temperature.svg';
+import sun from '../../../../assets/icons/icon_sun.svg';
 
 export function homeStats() {
 

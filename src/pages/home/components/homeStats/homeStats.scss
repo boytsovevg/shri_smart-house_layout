@@ -1,6 +1,9 @@
 .stats {
     display: flex;
 
+    background-image: url('../../../../assets/pictures/home-stats.png');
+    background-repeat: no-repeat;
+
     &__devices {
         list-style: none;
     }
