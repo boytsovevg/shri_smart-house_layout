@@ -34,6 +34,11 @@ const config = {
                 use: [
                     'file-loader'
                 ]
+            },
+            {
+                test: /\.(ttf|woff)$/,
+                exclude: /node_modules/,
+                loader: 'file-loader?name=src/assets/fonts/[name].[ext]'
             }
         ]
     },

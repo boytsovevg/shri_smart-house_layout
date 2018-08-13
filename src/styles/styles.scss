@@ -1,5 +1,11 @@
+@font-face { 
+    font-family: 'ArialMT'; 
+    src: local('ArialMT'), url('../assets/fonts/ArialMT-Bold.woff') format('woff'); 
+}
+
 body {
     margin: 0;
     padding: 0;
     background-color: #fff;
+    font-family: 'ArialMT', Arial, Helvetica, sans-serif
 }
