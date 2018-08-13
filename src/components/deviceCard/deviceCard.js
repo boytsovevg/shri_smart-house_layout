@@ -8,7 +8,7 @@ export function deviceCard({ icon, description, status, styles }) {
             <div class="device-card__description">
                 ${description}
             </div>
-            <p class="device-card__status">
+            <p class="device-card__status ${!status ? "device-card__status_hidden " : ""}">
                 ${status}
             </p>
         </div>
