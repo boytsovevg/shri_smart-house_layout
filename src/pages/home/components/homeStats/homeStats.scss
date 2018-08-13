@@ -1,0 +1,8 @@
+.stats {
+    display: flex;
+    align-items: center;
+
+    &__devices {
+        list-style: none;
+    }
+}
