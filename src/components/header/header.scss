@@ -1,24 +1,24 @@
 .header {
     display: flex;
     align-items: center;
-    height: 92px;
+    min-height: 92px;
     padding: 0 40px;
     border-bottom: 1px solid #f0f0f0;
 
     &__logo {
         margin-right: 52px;
     }
-}
 
-.menu {
-    display: flex;
-    align-items: center;
-
-    &__item {
-        margin-right: 28px;
+    &__nav {
+        display: flex;
+        align-items: center;
     }
 
-    &__item:last-child {
+    &__nav-item {
+            margin-right: 28px;
+    }
+
+    &__nav-item:last-child {
         margin-right: 0;
     }
 }
