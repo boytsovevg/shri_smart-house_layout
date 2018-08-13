@@ -1,0 +1,12 @@
+.weather-info {
+    display: flex;
+    align-items: center;
+
+    &__item {
+        margin-right: 18px;
+    }
+
+    &__item:last-child {
+        margin-right: 0;
+    }
+}
