@@ -5,3 +5,13 @@ $color-black: #333;
     height: 200px;
     background-color: $color-black;
 }
+
+.page {
+    display: flex;
+    flex: 1 1 auto;
+    padding: 30px 40px;
+}
+
+.half-size {
+    width: 50%;
+}
